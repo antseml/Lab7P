@@ -22,7 +22,7 @@ public final class History extends Command {
     }
 
     @Override
-    public Response execute(String primitiveArg, Route routeArg) {
+    public Response execute(String primitiveArg, Route routeArg, String userLogin) {
         try {
             var history = serverCommandManager.getHistory();
             if (history.isEmpty()) throw new HistoryIsEmptyException("История команд пуста!");

@@ -21,7 +21,7 @@ public abstract class Command {
         this.description = description;
     }
 
-    public abstract Response execute(String primitiveArg, Route routeArg);
+    public abstract Response execute(String primitiveArg, Route routeArg, String userLogin);
 
     /**
      * @return сигнатура команды

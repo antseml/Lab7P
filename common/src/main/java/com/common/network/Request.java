@@ -8,11 +8,19 @@ public final class Request implements Serializable {
     private String commandName;
     private String stringArg;
     private Route routeArg;
+    private String login;
+    private String password;
 
     public Request(String commandName, String primitiveArg, Route routeArg) {
         this.commandName = commandName;
         this.stringArg = primitiveArg;
         this.routeArg = routeArg;
+    }
+
+    public Request(String commandName, String primitiveArg, Route routeArg, String login, String password) {
+        this(commandName, primitiveArg, routeArg);
+        this.login = login;
+        this.password = password;
     }
 
     public String getCommandName() {
@@ -39,8 +47,24 @@ public final class Request implements Serializable {
         this.routeArg = routeArg;
     }
 
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     @Override
     public String toString() {
-        return "{" + commandName + "}" + "{" + stringArg + "}" + "{" + routeArg + "}";
+        return "{" + commandName + "}" + "{" + stringArg + "}" + "{" + routeArg + "}" + "{" + login + "}";
     }
 }

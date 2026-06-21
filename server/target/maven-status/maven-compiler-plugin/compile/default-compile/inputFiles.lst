@@ -1,20 +1,26 @@
-/Users/ivan/Lab-6-Programming/server/src/main/java/com/server/Main.java
-/Users/ivan/Lab-6-Programming/server/src/main/java/com/server/ServerApp.java
-/Users/ivan/Lab-6-Programming/server/src/main/java/com/server/commands/AddElement.java
-/Users/ivan/Lab-6-Programming/server/src/main/java/com/server/commands/AddIfMax.java
-/Users/ivan/Lab-6-Programming/server/src/main/java/com/server/commands/AverageOfDistance.java
-/Users/ivan/Lab-6-Programming/server/src/main/java/com/server/commands/Clear.java
-/Users/ivan/Lab-6-Programming/server/src/main/java/com/server/commands/Command.java
-/Users/ivan/Lab-6-Programming/server/src/main/java/com/server/commands/FilterContainsName.java
-/Users/ivan/Lab-6-Programming/server/src/main/java/com/server/commands/Help.java
-/Users/ivan/Lab-6-Programming/server/src/main/java/com/server/commands/History.java
-/Users/ivan/Lab-6-Programming/server/src/main/java/com/server/commands/Info.java
-/Users/ivan/Lab-6-Programming/server/src/main/java/com/server/commands/PrintDescending.java
-/Users/ivan/Lab-6-Programming/server/src/main/java/com/server/commands/RemoveByID.java
-/Users/ivan/Lab-6-Programming/server/src/main/java/com/server/commands/RemoveLower.java
-/Users/ivan/Lab-6-Programming/server/src/main/java/com/server/commands/Show.java
-/Users/ivan/Lab-6-Programming/server/src/main/java/com/server/commands/UpdateByID.java
-/Users/ivan/Lab-6-Programming/server/src/main/java/com/server/manager/CollectionManager.java
-/Users/ivan/Lab-6-Programming/server/src/main/java/com/server/manager/FileManager.java
-/Users/ivan/Lab-6-Programming/server/src/main/java/com/server/manager/ServerCommandManager.java
-/Users/ivan/Lab-6-Programming/server/src/main/java/com/server/network/UDPServer.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\auth\PasswordHasher.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\commands\AddElement.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\commands\AddIfMax.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\commands\AverageOfDistance.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\commands\Clear.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\commands\Command.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\commands\FilterContainsName.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\commands\Help.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\commands\History.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\commands\Info.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\commands\PrintDescending.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\commands\RemoveByID.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\commands\RemoveLower.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\commands\Show.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\commands\UpdateByID.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\db\DatabaseConfig.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\db\DatabaseManager.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\db\RouteRepository.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\db\SchemaInitializer.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\db\UserRepository.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\Main.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\manager\CollectionManager.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\manager\FileManager.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\manager\ServerCommandManager.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\network\UDPServer.java
+C:\Users\Александра\Desktop\прогалаб7 кира\server\src\main\java\com\server\ServerApp.java

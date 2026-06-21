@@ -1,17 +1,17 @@
-/Users/ivan/Lab-6-Programming/client/src/main/java/com/client/ClientApp.java
-/Users/ivan/Lab-6-Programming/client/src/main/java/com/client/Main.java
-/Users/ivan/Lab-6-Programming/client/src/main/java/com/client/RequestManager.java
-/Users/ivan/Lab-6-Programming/client/src/main/java/com/client/asker/Asker.java
-/Users/ivan/Lab-6-Programming/client/src/main/java/com/client/asker/CoordinatesAsker.java
-/Users/ivan/Lab-6-Programming/client/src/main/java/com/client/asker/LocationFromAsker.java
-/Users/ivan/Lab-6-Programming/client/src/main/java/com/client/asker/LocationToAsker.java
-/Users/ivan/Lab-6-Programming/client/src/main/java/com/client/asker/RouteAsker.java
-/Users/ivan/Lab-6-Programming/client/src/main/java/com/client/commands/ExecuteScript.java
-/Users/ivan/Lab-6-Programming/client/src/main/java/com/client/console/Console.java
-/Users/ivan/Lab-6-Programming/client/src/main/java/com/client/console/ConsoleFunctions.java
-/Users/ivan/Lab-6-Programming/client/src/main/java/com/client/console/TextColors.java
-/Users/ivan/Lab-6-Programming/client/src/main/java/com/client/network/ServerUnavailableException.java
-/Users/ivan/Lab-6-Programming/client/src/main/java/com/client/network/UDPClient.java
-/Users/ivan/Lab-6-Programming/client/src/main/java/com/client/util/InputProvider.java
-/Users/ivan/Lab-6-Programming/client/src/main/java/com/client/util/JLineInputProvider.java
-/Users/ivan/Lab-6-Programming/client/src/main/java/com/client/util/ScannerInputProvider.java
+C:\Users\Александра\Desktop\прогалаб7 кира\client\src\main\java\com\client\asker\Asker.java
+C:\Users\Александра\Desktop\прогалаб7 кира\client\src\main\java\com\client\asker\CoordinatesAsker.java
+C:\Users\Александра\Desktop\прогалаб7 кира\client\src\main\java\com\client\asker\LocationFromAsker.java
+C:\Users\Александра\Desktop\прогалаб7 кира\client\src\main\java\com\client\asker\LocationToAsker.java
+C:\Users\Александра\Desktop\прогалаб7 кира\client\src\main\java\com\client\asker\RouteAsker.java
+C:\Users\Александра\Desktop\прогалаб7 кира\client\src\main\java\com\client\ClientApp.java
+C:\Users\Александра\Desktop\прогалаб7 кира\client\src\main\java\com\client\commands\ExecuteScript.java
+C:\Users\Александра\Desktop\прогалаб7 кира\client\src\main\java\com\client\console\Console.java
+C:\Users\Александра\Desktop\прогалаб7 кира\client\src\main\java\com\client\console\ConsoleFunctions.java
+C:\Users\Александра\Desktop\прогалаб7 кира\client\src\main\java\com\client\console\TextColors.java
+C:\Users\Александра\Desktop\прогалаб7 кира\client\src\main\java\com\client\Main.java
+C:\Users\Александра\Desktop\прогалаб7 кира\client\src\main\java\com\client\network\ServerUnavailableException.java
+C:\Users\Александра\Desktop\прогалаб7 кира\client\src\main\java\com\client\network\UDPClient.java
+C:\Users\Александра\Desktop\прогалаб7 кира\client\src\main\java\com\client\RequestManager.java
+C:\Users\Александра\Desktop\прогалаб7 кира\client\src\main\java\com\client\util\InputProvider.java
+C:\Users\Александра\Desktop\прогалаб7 кира\client\src\main\java\com\client\util\JLineInputProvider.java
+C:\Users\Александра\Desktop\прогалаб7 кира\client\src\main\java\com\client\util\ScannerInputProvider.java

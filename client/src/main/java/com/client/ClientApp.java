@@ -42,7 +42,7 @@ public final class ClientApp {
                 "help", "info", "show", "add", "update", "remove_by_id",
                 "clear", "execute_script", "exit", "add_if_max",
                 "remove_lower", "history", "average_of_distance",
-                "filter_contains_name", "print_descending"
+                "filter_contains_name", "print_descending", "login", "register"
         );
 
         StringsCompleter completer = new StringsCompleter(commandNames);

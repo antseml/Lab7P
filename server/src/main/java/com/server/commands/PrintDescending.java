@@ -21,7 +21,7 @@ public final class PrintDescending extends Command {
     }
 
     @Override
-    public Response execute(String primitiveArg, Route routeArg) {
+    public Response execute(String primitiveArg, Route routeArg, String userLogin) {
         return new Response(RequestStatus.SUCCESS, null, collectionManager.descendSort());
     }
 }

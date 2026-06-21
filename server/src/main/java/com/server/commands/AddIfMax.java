@@ -1,35 +1,38 @@
 package com.server.commands;
 
+import com.common.model.Route;
 import com.common.network.RequestStatus;
 import com.common.network.Response;
+import com.server.db.RouteRepository;
 import com.server.manager.CollectionManager;
-import com.common.model.Route;
 
-/**
- * Класс, представляющий консольную команду add_if_max {element}
- * @author Ivan Kirillov
- */
+import java.sql.SQLException;
+
 public final class AddIfMax extends Command {
     private final CollectionManager collectionManager;
+    private final RouteRepository routeRepository;
 
-    /**
-     * Конструктор класса команды add_if_max
-     */
-    public AddIfMax(CollectionManager collectionManager) {
-        super("add_if_max", "Создать новый маршрут и добавить в коллекцию, если его значение превышает значение наибольшего элемента этой коллекции");
+    public AddIfMax(CollectionManager collectionManager, RouteRepository routeRepository) {
+        super("add_if_max", "Add a route if it is greater than the current maximum");
         this.collectionManager = collectionManager;
+        this.routeRepository = routeRepository;
     }
 
     @Override
-    public Response execute(String primitiveArg, Route routeArg) {
-        if (routeArg.compareTo(collectionManager.maxElement()) > 0){
-            routeArg.setId(Route.generateId());
-            routeArg.setCreationDate(java.time.ZonedDateTime.now());
+    public Response execute(String primitiveArg, Route routeArg, String userLogin) {
+        if (routeArg == null) return new Response(RequestStatus.ERROR, "Route was not provided", null);
 
-            collectionManager.inputElement(routeArg);
-            return new Response(RequestStatus.SUCCESS, "Маршрут добавлен в коллекцию", null);
-        } else {
-            return new Response(RequestStatus.ERROR, "Маршрут не добавлен, т.к. объект меньше максимального", null);
+        Route maxRoute = collectionManager.maxElement();
+        if (maxRoute != null && routeArg.compareTo(maxRoute) <= 0) {
+            return new Response(RequestStatus.ERROR, "Route was not added because it is not greater than max", null);
+        }
+
+        try {
+            Route savedRoute = routeRepository.insert(routeArg, userLogin);
+            collectionManager.inputElement(savedRoute);
+            return new Response(RequestStatus.SUCCESS, "Route added", null);
+        } catch (SQLException e) {
+            return new Response(RequestStatus.ERROR, "Database error: " + e.getMessage(), null);
         }
     }
 }

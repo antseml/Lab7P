@@ -24,7 +24,7 @@ public final class FilterContainsName extends Command {
     }
 
     @Override
-    public Response execute(String primitiveArg, Route routeArg) {
+    public Response execute(String primitiveArg, Route routeArg, String userLogin) {
         try {
             if (primitiveArg.isEmpty()) throw new IllegalArgumentException("Нужно ввести подстроку!");
 
