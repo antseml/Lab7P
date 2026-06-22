@@ -9,7 +9,7 @@ public record DatabaseConfig(String host, String database, String user, String p
         int serverPort = parsePort(firstNonBlank(System.getenv("SERVER_PORT"), args.length > 2 ? args[2] : "8080"));
 
         if (isBlank(user) || isBlank(password)) {
-            throw new IllegalArgumentException("Usage: server <db-user> <db-password> [server-port] [db-host] [db-name]");
+            throw new IllegalArgumentException("Usage: server s505225 y6jWffUw1FYwfuOk 8080 pg stubs");
         }
 
         return new DatabaseConfig(host, database, user, password, serverPort);

@@ -11,3 +11,36 @@
 2026-04-22 12:34:42.873 INFO  [Thread-1] com.server.Main - Сохранение коллекции в файл...
 2026-04-22 12:34:42.878 INFO  [Thread-1] com.server.Main - Коллекция успешно сохранена!
 2026-04-22 12:34:48.332 INFO  [Thread-0] com.server.Main - Сохранение коллекции в файл...
+2026-06-22 00:03:23.614 FATAL [main] com.server.Main - Critical server error: Usage: server <db-user> <db-password> [server-port] [db-host] [db-name]
+java.lang.IllegalArgumentException: Usage: server <db-user> <db-password> [server-port] [db-host] [db-name]
+	at com.server.db.DatabaseConfig.fromArgs(DatabaseConfig.java:12)
+	at com.server.Main.main(Main.java:36)
+2026-06-22 00:18:42.179 FATAL [main] com.server.Main - Critical server error: Ошибка при попытке подсоединения.
+org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:385)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:57)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:277)
+	at org.postgresql.Driver.makeConnection(Driver.java:448)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:199)
+	at com.server.db.DatabaseManager.getConnection(DatabaseManager.java:15)
+	at com.server.db.SchemaInitializer.initialize(SchemaInitializer.java:15)
+	at com.server.Main.main(Main.java:38)
+Caused by: java.net.UnknownHostException: pg
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:569)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+	at java.base/java.net.Socket.connect(Socket.java:659)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:261)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:122)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:146)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:289)
+	... 9 more
+2026-06-22 00:18:55.531 FATAL [main] com.server.Main - Critical server error: Usage: server <db-user> <db-password> [server-port] [db-host] [db-name]
+java.lang.IllegalArgumentException: Usage: server <db-user> <db-password> [server-port] [db-host] [db-name]
+	at com.server.db.DatabaseConfig.fromArgs(DatabaseConfig.java:12)
+	at com.server.Main.main(Main.java:36)
+2026-06-22 00:20:15.430 FATAL [main] com.server.Main - Critical server error: Usage: server s505225 y6jWffUw1FYwfuOk 8080 pg stubs
+java.lang.IllegalArgumentException: Usage: server s505225 y6jWffUw1FYwfuOk 8080 pg stubs
+	at com.server.db.DatabaseConfig.fromArgs(DatabaseConfig.java:12)
+	at com.server.Main.main(Main.java:36)

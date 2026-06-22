@@ -5,11 +5,12 @@ The server now stores the collection in PostgreSQL instead of XML.
 ## Server
 
 ```bash
-java -jar server/target/server-1.0-SNAPSHOT.jar <db-user> <db-password> [server-port] [db-host] [db-name]
+java -jar server/target/server-1.0-SNAPSHOT.jar s505225 y6jWffUw1FYwfuOk 8080 pg stubs
 ```
 
 Defaults:
-
+логин: s505225
+пароль:y6jWffUw1FYwfuOk
 - `server-port=8080`
 - `db-host=pg`
 - `db-name=studs`
